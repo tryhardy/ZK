@@ -8,10 +8,10 @@
     }
 
     &__header {
-        font-size: $base-font-size;
+        font-size: 14px;
         text-transform:uppercase;
         color:$brown;
-        padding: 18px 20px;
+        padding: 12px 20px;
         border: 1px solid $brown;
         margin-right: 4px;
         font-weight: bold;
@@ -30,7 +30,7 @@
 
     &__blocks {
         position: relative;
-        min-height: 500px;
+        min-height: 420px;
     }
 
     &__block {

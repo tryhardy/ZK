@@ -3,20 +3,20 @@
     margin: auto;
 
     &__large-text {
-        font-size: 50px;
+        font-size: 46px;
         text-transform: uppercase;
         font-weight: bold;
         color: $brown;
         line-height: 1;
-        letter-spacing: 2px;
     }
 
     &__small-text {
         color:$lightbrown;
         line-height: 1;
         font-style: italic;
-        font-size: $medium-font-size;
+        font-size: 18px;
         font-weight: 700;
+        margin-bottom:5px;
     }
 
     

@@ -80,7 +80,7 @@ block content
 					
 					.filter__column
 						.filter__name По датам
-						.filter__items
+						.filter__items.filter__dates
 							a.filter__item.active 09/19
 							a.filter__item 08/19
 							a.filter__item 07/19
@@ -155,10 +155,12 @@ block content
 				.contacts__map
 					#map
 				.contacts__window
-					.contacts__container
-						h2.contacts__title Контакты
-						.contacts__desc
-							p ООО Застройщик
+					.contacts__window-wrapper
+						.contacts__container
+							.contacts__information
+								h2.contacts__title Контакты
+								.contacts__desc
+									p ООО Застройщик
 							.socials
 								h4.socials__title Мы в социальных сетях
 								ul.socials__list

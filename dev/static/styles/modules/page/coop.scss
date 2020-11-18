@@ -1,26 +1,29 @@
 .cooperation {
-    padding:100px 0 120px 0;
+    padding:90px 0 100px 0;
 
     h2.title {
         max-width: 700px;
-        margin-bottom: 64px;
+        margin-bottom: 62px;
+        font-size: 42px;
+        line-height: 1.2;
     }
 
     h3 {
         color: $light;
+        font-size: 28px;
     }
 
     p {
         color: white;
-        font-size: $large-font-size;
-        max-width: 890px;
+        font-size: 20px;
+        max-width: 750px;
     }
 
     p.cooperation__description {
-        font-size: $large-font-size;
-        margin-bottom:32px;
+        font-size: 22px;
+        margin-bottom:28px;
         font-weight: bold;
-        max-width: 730px;
+        max-width: 700px;
         color: $lightbrown;
     }
 
@@ -50,4 +53,5 @@
 
 #coop {
     height:auto;
+    min-height: auto;
 }
