@@ -1,0 +1,50 @@
+.tabs {
+    margin-bottom: 100px;
+    
+    &__headers {
+        display: flex;
+        margin-bottom:32px;
+        z-index: 9999;
+    }
+
+    &__header {
+        font-size: $base-font-size;
+        text-transform:uppercase;
+        color:$brown;
+        padding: 18px 20px;
+        border: 1px solid $brown;
+        margin-right: 4px;
+        font-weight: bold;
+        background-color:white;
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__header.active {
+        color:white;
+        background-color: $brown;
+    }
+
+    &__blocks {
+        position: relative;
+        min-height: 500px;
+    }
+
+    &__block {
+        opacity:0;
+        transition: opacity .3s;
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__block.active {
+        opacity:1;
+        z-index: 10;
+    }
+}

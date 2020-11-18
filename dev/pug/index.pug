@@ -1,0 +1,184 @@
+extends layout/main
+
+block variables
+	-var title = 'Главная страница'
+
+block content
+	section.section#top
+		.top
+			img(src="static/images/common/houses.jpg")
+	
+	section.section.section--brown#about
+		.container
+			.about
+				.about__list
+					.about__item
+						.about__item-wrapper
+							h2.title.about__title О проекте
+							.about__description
+								p Проектом предусмотрена улучшенная планировка квартир: просторные помещения, большие окна, нестандартные формы. Каждый этаж имеет свое собственное архитектурно-планировочное решение, что позволило обеспечить в проекте разнообразие планировок квартир площадью от 39 до 205 квадратных метров.
+								p Большое количество парковочных мест не заставит Вас долго искать, где поставить машину вечером.
+								p Также для спокойного отдыха взрослых и весёлого настроения детей предусмотрен благоустроенный двор с детской площадкой.
+								p Плановый срок ввода в эксплуатацию - 2 квартал 2023 года.
+					.about__item
+						.about__item-wrapper
+							h2.title.about__title Жилой Комплекс
+							.about__description
+								p Расположен в экологически чистом и уютном Ленинградском районе Калининграда.
+								ul
+									li тихий район с прямым выездом на ул. А. Невского;
+									li удобная транспортная развязка, 20 мин до моря;
+									li продуманные, просторные планировки;
+									li автономное отопление;
+									li отдельный въезд на территорию ЖК;
+									li видовые двухэтажные квартиры на верхних этажах;
+									li на территории комплекса предусмотрены детские и спортивные площадки, прогулочные зоны;
+									li собственная, интенсивно развивающаяся инфраструктура района, рядом детский сад;
+									li единая социальная среда.
+
+	section.section.section--gray#coop
+		.container
+			.cooperation
+				h2.title Жилищно-строительный кооператив
+				.cooperation__slider
+					.cooperation__list
+						.cooperation__item
+							h3.cooperation__title Что такое ЖСК?
+							p.cooperation__description Жилищно-строительный кооператив — объединение людей или организаций с целью строительства жилья, а также для управления жильем. ЖСК - это застройщик. 
+							p И по смыслу, и по закону. Ничем не отличается от обычных ООО. Только его цель – не заработать на продажах, а самим построить дом для своих членов-пайщиков за счет паевых взносов участников. Покупая квартиру в ЖСК Вы становитесь одним из членов самого ЖСК, имеете право участвовать в деятельности кооператива путем принятия решений на общих собраниях.
+
+						.cooperation__item
+							h3.cooperation__title Что такое «договор паенакопления»? 
+							p Договор, в котором будет прописана Ваша квартира, права и обязанности Вас как члена ЖСК. Это основной правоустанавливающий документ. Он же будет основанием для получения  квартиры и регистрации ее в Росреестре после ввода объекта в эксплуатацию.
+
+						.cooperation__item
+							h3.cooperation__title Защита прав
+							p Права пайщиков защищены обязательствами самого ЖСК и договором. Следует учитывать, что строительство объекта ведется при финансовой поддержке Фонда «ЖСС КО» и Правительства Калининградской области. Гарантиями защиты прав являются:
+							ul.list.list--small.list--line
+								li Фонд создан Правительством области и администрацией Калининграда.
+								li 20 лет безупречной работы на рынке строительства, тысячи введенных в эксплуатацию объектов
+								li финансирование за счет средств бюджетного гранта, который областной бюджет дает Фонду на строительство объекта дополнительно к средствам пайщиков и средствам самого Фонда.
+
+	section.section#timeline
+		.container
+			.timeline
+				h2.title.title--center.timeline__title ход строительства
+				p.timeline__description В рамках первой очереди будут возведены 2 здания высотой от 15 до 25 этажей, срок сдачи первой очереди - 1 квартал 2019. В рамках второй очереди будут построены ещё 2 жилых корпуса с этажностью 18-25<br>и паркинги со встроенно‐пристроенными помещениями, срок сдачи - 2 квартал 2020.
+
+				.filter
+					.filter__column
+						.filter__name По домам
+						.filter__items
+							a.filter__item.active дом 1
+							a.filter__item дом 2
+					
+					.filter__column
+						.filter__name Видео со стройки
+						.filter__items.filter--video
+							a.filter__item дом 1
+							a.filter__item дом 2
+					
+					.filter__column
+						.filter__name По датам
+						.filter__items
+							a.filter__item.active 09/19
+							a.filter__item 08/19
+							a.filter__item 07/19
+							a.filter__item 05/19
+
+		.timeline__slider
+			.timeline__slider-wrapper
+				.timeline__slides
+					.timeline__slide
+						a
+							img(src="static/images/common/slider/3.jpg")
+					.timeline__slide
+						a
+							img(src="static/images/common/slider/1.jpg")
+					.timeline__slide
+						a
+							img(src="static/images/common/slider/2.jpg")
+					.timeline__slide
+						a
+							img(src="static/images/common/slider/2.jpg")
+
+	section.section.section--brown#offers
+		.container
+			.offers
+				.tabs
+					.tabs__headers
+						.tabs__header.active(data-tab="1") Акции
+						.tabs__header(data-tab="2") Новости
+					.tabs__blocks
+						.tabs__block.active(data-tab="1")
+							.simple-slider
+								.simple-slider__list
+									- for (var x = 0; x < 4; x++)
+										.simple-slider__item
+											a
+												picture
+													source(srcset="static/images/common/smallpic.jpg" media="(max-width: 720px)")
+													img(src="static/images/common/offer.png")
+						
+						.tabs__block(data-tab="2")
+							.simple-slider
+								.simple-slider__list
+									- for (var x = 0; x < 4; x++)
+										.simple-slider__item
+											a
+												picture
+													source(srcset="static/images/common/smallpic.jpg" media="(max-width: 720px)")
+													img(src="static/images/common/offer.png")
+
+				.documents
+					h2.title.documents__title Документы
+					ul.documents__list
+						- for (var x = 0; x < 4; x++)
+							li.documents__item
+								.documents__item-wrapper
+									a(href="#")
+										.documents__icon
+											img(src="static/images/common/zip.svg")
+
+										.documents__name Документ на плотноавтоматическую установку ограждений					
+
+	section.section#contacts
+		.contacts
+			.container
+				.contacts__info
+					h3.title.contacts__subtitle Застройщик –
+					h2.title.contacts__title жилищно-строительный кооператив «Ганза-4». 
+					p Основной инвестор и технический заказчик строительства объекта – Фонд «Жилищное и социальное строительство Калининградской области», созданный Правительством Калининградской области и администрацией г. Калининграда с 20-летним опытом работы.
+					p Строительство домов ведется при финансовой поддрежке Правительства Калининградской области. 
+
+			.contacts__wrapper
+				.contacts__map
+					#map
+				.contacts__window
+					.contacts__container
+						h2.contacts__title Контакты
+						.contacts__desc
+							p ООО Застройщик
+							.socials
+								h4.socials__title Мы в социальных сетях
+								ul.socials__list
+									li.socials__item
+										a(href="#").social__link
+											i.fab.fa-facebook-f
+									li.socials__item
+										a(href="#").social__link
+											i.fab.fa-instagram
+									li.socials__item
+										a(href="#").social__link
+											i.fab.fa-vk
+	
+	.choose-apartment
+		a.ff-colus.d-block(href="/catalog/")
+			img(title="Выбрать квартиру" alt="Выбрать квартиру" src="https://xn--1-ktbmqna.xn--p1ai/img/svg/svg_1.svg")
+			div Выбрать<br> квартиру
+
+
+
+				
+
+

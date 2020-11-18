@@ -1,0 +1,19 @@
+.offers {
+
+}
+
+#offers {
+    padding:60px 0 80px 0;
+    height: auto;
+}
+
+
+.simple-slider {
+    &__list {
+        padding-bottom:30px;
+    }
+    .slider-navigation {
+        left:50%;
+        transform: translateX(-50%);
+    }
+}
