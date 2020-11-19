@@ -323,6 +323,19 @@ button { outline: none; }
 }
 
 @media(max-width:720px) {
+  h2.title,
+  .cooperation h2.title,
+  .contacts h2  {
+    font-size: 32px;
+  }
+
+  .contacts__window .contacts__container .contacts__title,
+  .documents h2,
+  .title--center,
+  .timeline__description {
+    text-align: left;
+  }
+
   .tabs__blocks {
     margin: 0;
     min-height: 100vw;
