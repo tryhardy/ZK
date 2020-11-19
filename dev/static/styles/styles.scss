@@ -261,6 +261,19 @@ button { outline: none; }
   .tabs__header {
     z-index: 9999999999;
   }
+
+  #timeline,
+  #about {
+    min-height: auto;
+  }
+  
+  .contacts__info {
+    padding-bottom: 70px;
+  }
+
+  .section {
+    min-height: auto;
+  }
 }
 
 @media(max-width:992px) {
