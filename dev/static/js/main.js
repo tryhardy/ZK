@@ -18,14 +18,16 @@ $(document).ready(function(){
         centerPadding: '0px',
         slidesToShow: 3,
         infinite: true,
-        arrows:false,
+        prevArrow: '<button type="button" class="prev"></button>',
+        nextArrow: '<button type="button" class="next"></button>',
         dots:true,
         dotsClass: "slider-navigation",
         responsive: [
             {
               breakpoint: 728,
               settings: {
-                arrows: false,
+                prevArrow: '<button type="button" class="prev"></button>',
+                nextArrow: '<button type="button" class="next"></button>',
                 centerMode: false,
                 centerPadding: '0px',
                 slidesToShow: 1

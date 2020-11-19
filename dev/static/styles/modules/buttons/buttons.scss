@@ -52,7 +52,7 @@
     top: calc(100% - 145px);
     right: 0px;
     background-color: $brown;
-    z-index: 2;
+    z-index: 99999;
 
     a {
         color: rgb(255, 255, 255);
@@ -66,5 +66,56 @@
     img {
         width: 30px;
         margin: 0px 0px 9px;
+    }
+}
+
+button.slick-arrow {
+    width:40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    background-color:#ffffffb8;
+    border: 0;
+    position: absolute;
+    top: calc(50% - 30px);
+    transform: translateY(-50%);
+    z-index: 9999;
+    background-image: url("https://xn--1-ktbmqna.xn--p1ai/img/svg/svg_9.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+button.next {
+    right: 270px;
+}
+button.prev {
+    left: 270px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+@media (max-width:1200px) {
+    button.next {
+        right: 100px;
+    }
+    button.prev {
+        left: 100px;
+        transform: translateY(-50%) rotate(180deg);
+    }    
+}
+
+@media(max-width:992px) {
+    button.next {
+        right: 15px;
+    }
+    button.prev {
+        left: 15px;
+        transform: translateY(-50%) rotate(180deg);
+    }    
+}
+
+@media(max-width:720px) {
+    button.slick-arrow {
+        top: 50%;
     }
 }
